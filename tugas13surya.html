@@ -1,0 +1,90 @@
+<html lang="en">
+
+<script>
+    function Menu(Mobil) {
+     var i;
+     var x = document.getElementsByClassName("x");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(Mobil).style.display = "block"; 
+    }
+
+    function Menu(UnikomMart) {
+     var i;
+     var x = document.getElementsByClassName("x");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(UnikomMart).style.display = "block"; 
+    }
+
+    function Menu(Kampus) {
+     var i;
+     var x = document.getElementsByClassName("x");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(Kampus).style.display = "block"; 
+    }
+
+    function Menu(Foto) {
+     var i;
+     var x = document.getElementsByClassName("x");
+     for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none"; 
+     }
+     document.getElementById(Foto).style.display = "block"; 
+    }
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/w3.css">
+
+
+<body>
+    <div>
+        <img src="css/download (3).jpg" width="100%" height="30%">
+    </div>
+    <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="Menu('Mobil')">Mobil</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('UnikomMart')">UnikomMart</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Kampus')">Kampus</button>
+        <button class="w3-bar-item w3-button" onclick="Menu('Foto')">Foto</button>
+    </div>
+
+    <div id="Mobil" class="w3-container x" style="display:none">
+        <h1>Mobil</h1>
+        <div class="w3-animate-fading">
+            <img src="css/mobil.jpg" >
+        </div>       
+    </div>
+
+    <div id="UnikomMart" class="w3-container x" style="display:none">
+        <h1>UnikomMart</h1>
+        <div class="w3-animate-bottom">
+            <img src="css/minum.jpg">
+        </div>       
+    </div>
+
+    <div id="Kampus" class="w3-container x" style="display:none">
+        <h1>Kampus</h1>
+        <div class="w3-animate-top">
+            <img src="css/gedung.jpg" >
+        </div>       
+    </div>
+
+    <div id="Foto" class="w3-container x" style="display:none">
+        <h1>Cha-Eun-woo</h1>
+        <div class="w3-animate-zoom">
+            <img src="css/Cha-Eun-woo.jpg" alt="">
+        </div>       
+    </div>
+
+
+    
+       
+</body>
+</html>
